@@ -7,7 +7,7 @@ La tarjeta se organiza en tres secciones, en este orden: empresa, código QR y p
 
 ## Enlace público
 
-https://rutamerito.github.io/ANHETech-Tarjeta-Digital/
+https://anhetech.github.io/ANHETech-Tarjeta-Digital/
 
 ## Archivos del proyecto
 
@@ -44,7 +44,7 @@ Cada vez que se sube un cambio a `main`, GitHub actualiza la página en unos min
 - **WhatsApp personal:** https://wa.me/573187441999
 - **Correo corporativo:** ANHETECHERP@gmail.com
 - **Correo personal:** ingjoseanca@gmail.com
-- **Sitio web:** https://rutamerito.github.io/ANHETech-ERP/
+- **Sitio web:** https://anhetech.github.io/ANHETech-ERP/
 - **LinkedIn del CEO:** https://www.linkedin.com/in/fanor-jose-angulo-c-6a9a9626b
 - **Facebook:** https://www.facebook.com/Concursa365
 - **TikTok:** https://www.tiktok.com/@rutaalmerito/video/7680729418909617416
@@ -71,7 +71,7 @@ El logotipo utilizado es `Logo_transparente.png`, tomado en modo de solo lectura
 El archivo `QR_ANHETech_Tarjeta_Digital.png` contiene exactamente esta dirección:
 
 ```
-https://rutamerito.github.io/ANHETech-Tarjeta-Digital/
+https://anhetech.github.io/ANHETech-Tarjeta-Digital/
 ```
 
 Puede imprimirse o compartirse digitalmente. Al escanearlo se abre esta tarjeta.

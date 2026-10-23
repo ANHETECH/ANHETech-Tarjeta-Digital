@@ -11,12 +11,12 @@ Correo empresarial: ANHETECHERP@gmail.com
 Celular / WhatsApp personal: +57 318 744 1999
 Correo personal: ingjoseanca@gmail.com
 
-Sitio web: https://rutamerito.github.io/ANHETech-ERP/
+Sitio web: https://anhetech.github.io/ANHETech-ERP/
 LinkedIn del CEO: https://www.linkedin.com/in/fanor-jose-angulo-c-6a9a9626b
 Facebook: https://www.facebook.com/Concursa365
 TikTok: https://www.tiktok.com/@rutaalmerito/video/7680729418909617416
 
-Tarjeta digital: https://rutamerito.github.io/ANHETech-Tarjeta-Digital/`;
+Tarjeta digital: https://anhetech.github.io/ANHETech-Tarjeta-Digital/`;
 
   const copyButton = document.querySelector("[data-copy-contact]");
   const status = document.getElementById("share-status");
