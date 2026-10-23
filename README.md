@@ -1,7 +1,9 @@
 # Tarjeta Digital ANHETech ERP™
 
-Tarjeta digital oficial del **Ing. Fanor José Angulo C., CEO de ANHETech ERP™**.
-Incluye botones para guardar el contacto, llamar, escribir por WhatsApp o correo y visitar el sitio web y las redes oficiales.
+Tarjeta digital de **ANHETech ERP™**, con servicios de desarrollo web, aplicaciones, software a la medida, ERP y automatización.
+Incluye contacto empresarial, perfil del CEO, botones para guardar el contacto completo y opciones para compartirlo por WhatsApp.
+
+La tarjeta se organiza en tres secciones, en este orden: empresa, código QR y perfil del CEO. La identidad oficial se mantiene intacta con el nombre **ANHETech ERP™**, el eslogan **Tu idea, nuestra ingeniería** y la frase **Soluciones digitales que impulsan tu futuro**.
 
 ## Enlace público
 
@@ -13,7 +15,8 @@ https://rutamerito.github.io/ANHETech-Tarjeta-Digital/
 |---|---|
 | `index.html` | Página principal de la tarjeta digital. |
 | `styles.css` | Diseño visual, colores, adaptación a celulares y computadores. |
-| `contacto-anhetech.vcf` | Contacto descargable para guardar en el teléfono. |
+| `script.js` | Copia el texto de contacto y muestra la confirmación. |
+| `Contacto-ANHETech-ERP-Fanor-Angulo.vcf` | Contacto descargable con todos los datos. |
 | `QR_ANHETech_Tarjeta_Digital.png` | Código QR de alta resolución con la URL pública. |
 | `assets/images/logo-anhetech.png` | Logotipo oficial de ANHETech ERP™. |
 | `.nojekyll` | Archivo técnico para que GitHub Pages publique el sitio tal cual. |
@@ -34,7 +37,7 @@ Cada vez que se sube un cambio a `main`, GitHub actualiza la página en unos min
 ## Datos oficiales incluidos
 
 - **Nombre:** Ing. Fanor José Angulo C.
-- **Cargo:** CEO de ANHETech ERP™.
+- **Cargo:** CEO · Desarrollador principal de ANHETech ERP™.
 - **Teléfono corporativo:** +57 318 265 6464
 - **WhatsApp corporativo:** https://wa.me/573182656464
 - **Teléfono personal:** +57 318 744 1999
@@ -47,6 +50,17 @@ Cada vez que se sube un cambio a `main`, GitHub actualiza la página en unos min
 - **TikTok:** https://www.tiktok.com/@rutaalmerito/video/7680729418909617416
 
 El enlace de LinkedIn corresponde al **perfil personal del CEO**, no a una página corporativa.
+
+## Compartir el contacto
+
+El botón **Compartir contacto** ofrece cuatro alternativas:
+
+- Descargar el archivo `.vcf` completo.
+- Abrir un mensaje de WhatsApp empresarial con los datos.
+- Abrir un mensaje de WhatsApp personal con los datos.
+- Copiar el texto de contacto al portapapeles.
+
+WhatsApp abre el mensaje para revisarlo y enviarlo; guardar el contacto depende del teléfono o de la aplicación de contactos de cada persona.
 
 ## Logo oficial
 
