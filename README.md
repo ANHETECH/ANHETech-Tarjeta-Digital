@@ -3,7 +3,7 @@
 Tarjeta digital de **ANHETech ERP™**, con servicios de desarrollo web, aplicaciones, software a la medida, ERP y automatización.
 Incluye contacto empresarial, perfil del CEO, botones para guardar el contacto completo y opciones para compartirlo por WhatsApp.
 
-La tarjeta se organiza en tres secciones, en este orden: empresa, código QR y perfil del CEO. La identidad oficial se mantiene intacta con el nombre **ANHETech ERP™**, el eslogan **Tu idea, nuestra ingeniería** y la frase **Soluciones digitales que impulsan tu futuro**.
+La tarjeta se organiza en una sola vista compacta: encabezado de marca, cinco servicios profesionales, llamada a la acción, contacto y redes, código QR y perfil del CEO. La identidad oficial se mantiene con el nombre **ANHETech ERP™**, el eslogan **Tecnología que impulsa tus ideas** y la paleta azul marino con acentos dorados.
 
 ## Enlace público
 
@@ -14,7 +14,7 @@ https://anhetech.github.io/ANHETech-Tarjeta-Digital/
 | Archivo | Para qué sirve |
 |---|---|
 | `index.html` | Página principal de la tarjeta digital. |
-| `styles.css` | Diseño visual, colores, adaptación a celulares y computadores. |
+| `styles.css` | Diseño visual, servicios en cuadrícula adaptable, colores y adaptación a celulares y computadores. |
 | `script.js` | Copia el texto de contacto y muestra la confirmación. |
 | `Contacto-ANHETech-ERP-Fanor-Angulo.vcf` | Contacto descargable con todos los datos. |
 | `QR_ANHETech_Tarjeta_Digital.png` | Código QR de alta resolución con la URL pública. |
