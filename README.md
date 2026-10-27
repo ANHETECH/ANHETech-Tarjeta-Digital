@@ -3,7 +3,7 @@
 Tarjeta digital de **ANHETech ERP™**, con servicios de desarrollo web, aplicaciones, software a la medida, ERP y automatización.
 Incluye contacto empresarial, perfil del CEO, botones para guardar el contacto completo y opciones para compartirlo por WhatsApp.
 
-La tarjeta se organiza en una sola vista compacta: encabezado de marca, cinco servicios profesionales, llamada a la acción, contacto y redes, código QR y perfil del CEO. La identidad oficial se mantiene con el nombre **ANHETech ERP™**, el eslogan **Tecnología que impulsa tus ideas** y la paleta azul marino con acentos dorados.
+La tarjeta se organiza en una sola vista compacta: encabezado de marca, cinco servicios profesionales, llamada a la acción, contacto y redes, código QR y perfil del CEO. La identidad oficial se mantiene con el nombre **ANHETech ERP™**, el eslogan **Tecnología que impulsa tus ideas** y la paleta azul profundo con acentos turquesa.
 
 ## Enlace público
 
