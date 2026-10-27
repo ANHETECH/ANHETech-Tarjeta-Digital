@@ -1,5 +1,5 @@
 :root {
-  --bg: #e9f1f8;
+  --bg: #0b1626;
   --bg-soft: #f5f9fc;
   --card: #f5f9fc;
   --card-2: #ffffff;
@@ -85,9 +85,9 @@ img {
   overflow: hidden;
   pointer-events: none;
   background:
-    radial-gradient(ellipse 82% 58% at 50% -12%, #ffffff 0%, transparent 72%),
-    radial-gradient(ellipse 70% 46% at 18% 120%, rgba(22, 184, 166, 0.1) 0%, transparent 70%),
-    linear-gradient(180deg, #eef5fa 0%, #e7f0f8 58%, #eaf2f9 100%);
+    radial-gradient(ellipse 82% 58% at 50% -12%, #19304d 0%, transparent 72%),
+    radial-gradient(ellipse 70% 46% at 18% 120%, rgba(22, 184, 166, 0.12) 0%, transparent 70%),
+    linear-gradient(180deg, #0d1a2d 0%, #091322 58%, #070f1b 100%);
 }
 
 .ambient__glow {
@@ -102,7 +102,7 @@ img {
   height: 480px;
   top: -180px;
   right: -100px;
-  background: radial-gradient(circle, rgba(22, 184, 166, 0.16), transparent 68%);
+  background: radial-gradient(circle, rgba(22, 184, 166, 0.22), transparent 68%);
 }
 
 .ambient__glow--blue {
@@ -110,16 +110,16 @@ img {
   height: 560px;
   bottom: -240px;
   left: -160px;
-  background: radial-gradient(circle, rgba(25, 48, 77, 0.1), transparent 68%);
+  background: radial-gradient(circle, rgba(25, 48, 77, 0.55), transparent 68%);
 }
 
 .ambient__grid {
   position: absolute;
   inset: 0;
-  opacity: 0.35;
+  opacity: 0.4;
   background-image:
-    linear-gradient(rgba(16, 29, 51, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(16, 29, 51, 0.05) 1px, transparent 1px);
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
   background-size: 72px 72px;
   mask-image: radial-gradient(ellipse 70% 60% at 50% 20%, #000 10%, transparent 75%);
   -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 20%, #000 10%, transparent 75%);
@@ -140,8 +140,8 @@ img {
   border-radius: var(--radius);
   background: var(--card);
   box-shadow:
-    0 40px 90px -36px rgba(16, 29, 51, 0.35),
-    0 0 0 1px rgba(255, 255, 255, 0.7) inset,
+    0 44px 90px -34px rgba(0, 0, 0, 0.7),
+    0 0 0 1px rgba(255, 255, 255, 0.75) inset,
     0 1px 0 rgba(255, 255, 255, 0.95) inset;
   animation: rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
