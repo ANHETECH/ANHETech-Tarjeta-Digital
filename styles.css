@@ -384,12 +384,17 @@ img {
   line-height: 1.52;
 }
 
-.service--wide {
-  grid-column: 1 / -1;
+.service__text p.service__note {
+  margin: 7px 0 0;
+  padding-top: 7px;
+  border-top: 1px solid var(--line-soft);
+  font-size: 0.74rem;
+  line-height: 1.5;
 }
 
-.service--wide .service__text p {
-  max-width: 72ch;
+.service__note strong {
+  color: var(--turquoise-deep);
+  font-weight: 700;
 }
 
 /* Llamada a la acción y contacto */
@@ -1175,10 +1180,6 @@ img {
 
   .services {
     grid-template-columns: 1fr;
-  }
-
-  .service--wide {
-    grid-column: auto;
   }
 
   .cta__actions {
