@@ -1,22 +1,18 @@
 (() => {
-  const CONTACT_TEXT = `Contacto profesional — ANHETech ERP™
+  const CONTACT_TEXT = `ANHETech ERP™
 
-Ing. Fanor José Angulo C.
-CEO · Desarrollador principal
-ANHETech ERP™
+Soluciones tecnológicas para empresas.
 
-Teléfono / WhatsApp empresarial: +57 318 265 6464
-Correo empresarial: ANHETECHERP@gmail.com
+Servicios: desarrollo web, aplicaciones móviles y de escritorio, software a medida, ERP, automatización y marketing digital.
 
-Celular / WhatsApp personal: +57 318 744 1999
-Correo personal: ingjoseanca@gmail.com
+WhatsApp empresarial: +57 318 265 6464
 
-Sitio web: https://anhetech.github.io/ANHETech-ERP/
-LinkedIn del CEO: https://www.linkedin.com/in/fanor-jose-angulo-c-6a9a9626b
-Facebook: https://www.facebook.com/Concursa365
-TikTok: https://www.tiktok.com/@rutaalmerito/video/7680729418909617416
+Sitio web: https://anhetech.github.io/ANHETech-ERP/`;
 
-Tarjeta digital: https://anhetech.github.io/ANHETech-Tarjeta-Digital/`;
+  const shareWhatsapp = document.querySelector("[data-share-whatsapp]");
+  if (shareWhatsapp) {
+    shareWhatsapp.href = `https://wa.me/573182656464?text=${encodeURIComponent(CONTACT_TEXT)}`;
+  }
 
   const copyButton = document.querySelector("[data-copy-contact]");
   const status = document.getElementById("share-status");
