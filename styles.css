@@ -574,9 +574,17 @@ img {
   margin-bottom: 14px;
 }
 
+.closing-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  gap: 14px;
+  align-items: stretch;
+}
+
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1fr);
+  grid-auto-rows: minmax(66px, 1fr);
   gap: 11px;
 }
 
@@ -652,11 +660,7 @@ img {
   transform: translate(2px, -2px);
 }
 
-/* QR y CEO */
-
-.closing-section {
-  padding: 0 var(--pad-x) clamp(24px, 3.4vw, 32px);
-}
+/* Botones y compartir */
 
 .btn {
   display: inline-flex;
@@ -905,82 +909,7 @@ img {
   height: 18px;
 }
 
-/* QR y CEO */
-
-.contact-lower {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
-  gap: 11px;
-  margin-top: 0;
-}
-
-.qr-card {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  min-width: 0;
-}
-
-.qr-card__frame {
-  flex: none;
-  width: 104px;
-  height: 104px;
-  padding: 7px;
-  border-radius: 12px;
-  background: #ffffff;
-  box-shadow: 0 16px 32px -22px rgba(16, 29, 51, 0.4), 0 0 0 1px rgba(217, 227, 237, 0.9) inset;
-}
-
-.qr-card__frame img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.qr-card__copy {
-  min-width: 0;
-}
-
-.qr-card__copy .overline {
-  margin-bottom: 2px;
-  font-size: 0.62rem;
-}
-
-.qr-card__copy h3 {
-  margin: 0;
-  color: var(--ink);
-  font-family: var(--font-display);
-  font-size: 1rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  line-height: 1.2;
-}
-
-.qr-card__copy p {
-  margin: 3px 0 0;
-  color: var(--ink-soft);
-  font-size: 0.72rem;
-  line-height: 1.4;
-}
-
-.qr-card__url {
-  display: inline-block;
-  max-width: 100%;
-  margin-top: 4px;
-  padding-bottom: 1px;
-  border-bottom: 1px solid rgba(8, 127, 117, 0.4);
-  color: var(--turquoise-deep);
-  font-size: 0.7rem;
-  font-weight: 600;
-  line-height: 1.35;
-  overflow-wrap: anywhere;
-  transition: color 0.2s ease, border-color 0.2s ease;
-}
-
-.qr-card__url:hover {
-  color: var(--navy);
-  border-color: var(--navy);
-}
+/* Perfil del CEO */
 
 .ceo-panel {
   display: flex;
@@ -1131,9 +1060,14 @@ img {
   }
 }
 
-@media (max-width: 760px) {
-  .contact-lower {
+@media (max-width: 860px) {
+  .closing-grid {
     grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: auto;
   }
 }
 
@@ -1210,15 +1144,6 @@ img {
     margin-top: 8px;
   }
 
-  .qr-card {
-    gap: 13px;
-  }
-
-  .qr-card__frame {
-    width: 94px;
-    height: 94px;
-  }
-
   .footer-meta {
     flex-direction: column;
     align-items: flex-start;
@@ -1235,21 +1160,12 @@ img {
     gap: 12px;
   }
 
-  .contact-lower {
-    grid-template-columns: 1fr;
-  }
-
   .cta__actions > .btn--contact {
     grid-column: 1 / -1;
   }
 
   .cta__socials {
     grid-template-columns: 1fr;
-  }
-
-  .qr-card__frame {
-    width: 88px;
-    height: 88px;
   }
 
   .ceo-panel__links {
@@ -1328,14 +1244,6 @@ img {
     padding-right: 12px;
     padding-left: 12px;
     font-size: 0.84rem;
-  }
-
-  .qr-card {
-    align-items: flex-start;
-  }
-
-  .qr-card__copy h3 {
-    font-size: 0.94rem;
   }
 }
 
