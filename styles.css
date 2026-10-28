@@ -151,10 +151,6 @@ img {
   background: linear-gradient(90deg, transparent, var(--turquoise-deep) 18%, var(--turquoise) 50%, var(--turquoise-deep) 82%, transparent);
 }
 
-.nowrap {
-  white-space: nowrap;
-}
-
 /* Encabezado compacto */
 
 .hero {
@@ -407,7 +403,6 @@ img {
   grid-template-columns: minmax(0, 1fr) minmax(270px, 330px);
   grid-template-areas:
     "copy actions"
-    "channels channels"
     "socials socials";
   align-items: center;
   gap: 8px clamp(18px, 3vw, 30px);
@@ -471,94 +466,28 @@ img {
   height: 18px;
 }
 
-.cta__channels {
-  grid-area: channels;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 8px;
-  margin-top: 8px;
-  padding-top: clamp(14px, 2vw, 18px);
-  border-top: 1px solid var(--line-soft);
-}
-
-.channel {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr) auto;
-  align-items: center;
-  gap: 10px;
-  min-width: 0;
-  padding: 8px 11px;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: var(--surface-alt);
-  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
-}
-
-.channel:hover {
-  transform: translateY(-2px);
-  border-color: rgba(22, 184, 166, 0.5);
-  background: #ffffff;
-  box-shadow: 0 16px 30px -26px rgba(16, 29, 51, 0.35);
-}
-
-.channel__icon {
-  display: grid;
-  place-items: center;
-  width: 32px;
-  height: 32px;
-  flex: none;
-  border: 1px solid rgba(22, 184, 166, 0.35);
-  border-radius: 9px;
-  background: rgba(22, 184, 166, 0.1);
-  color: var(--turquoise-deep);
-}
-
-.channel__icon .icon {
-  width: 16px;
-  height: 16px;
-}
-
-.channel__text {
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-}
-
-.channel__label {
-  color: var(--ink-soft);
-  font-size: 0.62rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  line-height: 1.4;
-  text-transform: uppercase;
-}
-
-.channel__value {
+.cta__actions > .btn--contact {
+  min-height: 48px;
+  padding: 10px 8px;
+  border-radius: 11px;
   color: var(--ink);
-  font-size: 0.8rem;
-  font-weight: 600;
-  line-height: 1.35;
-  overflow-wrap: anywhere;
+  font-size: 0.74rem;
 }
 
-.channel__arrow {
-  width: 13px;
-  height: 13px;
-  flex: none;
-  color: rgba(16, 29, 51, 0.28);
-  transition: color 0.2s ease, transform 0.2s ease;
-}
-
-.channel:hover .channel__arrow {
+.cta__actions > .btn--contact .icon {
+  width: 18px;
+  height: 18px;
   color: var(--turquoise-deep);
-  transform: translate(2px, -2px);
 }
 
 .cta__socials {
   grid-area: socials;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 8px;
+  margin-top: 4px;
+  padding-top: clamp(14px, 2vw, 18px);
+  border-top: 1px solid var(--line-soft);
 }
 
 .social-tile {
@@ -616,7 +545,113 @@ img {
   overflow-wrap: anywhere;
 }
 
-/* Botones */
+.social-tile__arrow {
+  width: 13px;
+  height: 13px;
+  flex: none;
+  margin-left: auto;
+  color: rgba(16, 29, 51, 0.28);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-tile:hover .social-tile__arrow {
+  color: var(--turquoise-deep);
+  transform: translate(2px, -2px);
+}
+
+/* Proyectos */
+
+.projects-section {
+  padding: 0 var(--pad-x) clamp(24px, 3.4vw, 32px);
+}
+
+.projects-section .section-head {
+  margin-bottom: 14px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 11px;
+}
+
+.project-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  background: var(--surface);
+  box-shadow: 0 14px 32px -28px rgba(16, 29, 51, 0.35);
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(22, 184, 166, 0.5);
+  background: #ffffff;
+}
+
+.project-card__icon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  flex: none;
+  border: 1px solid rgba(22, 184, 166, 0.35);
+  border-radius: 11px;
+  background: rgba(22, 184, 166, 0.1);
+  color: var(--turquoise-deep);
+}
+
+.project-card__icon .icon {
+  width: 19px;
+  height: 19px;
+}
+
+.project-card__text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.project-card__name {
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.012em;
+}
+
+.project-card__desc {
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.project-card__arrow {
+  width: 14px;
+  height: 14px;
+  flex: none;
+  margin-left: auto;
+  color: rgba(16, 29, 51, 0.28);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.project-card:hover .project-card__arrow {
+  color: var(--turquoise-deep);
+  transform: translate(2px, -2px);
+}
+
+/* QR y CEO */
+
+.closing-section {
+  padding: 0 var(--pad-x) clamp(24px, 3.4vw, 32px);
+}
 
 .btn {
   display: inline-flex;
@@ -871,7 +906,7 @@ img {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
   gap: 11px;
-  margin-top: 11px;
+  margin-top: 0;
 }
 
 .qr-card {
@@ -1082,34 +1117,16 @@ img {
     grid-template-areas:
       "copy"
       "actions"
-      "channels"
       "socials";
     gap: 16px;
-  }
-
-  .cta__channels {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    margin-top: 0;
-  }
-
-  .channel:last-child {
-    grid-column: 1 / -1;
   }
 
   .cta__actions {
     max-width: 520px;
   }
-
-  .cta__socials {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 }
 
 @media (max-width: 760px) {
-  .cta__channels {
-    grid-template-columns: 1fr;
-  }
-
   .contact-lower {
     grid-template-columns: 1fr;
   }
@@ -1165,19 +1182,24 @@ img {
   }
 
   .cta__actions {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     max-width: none;
   }
 
   .cta__actions > .btn--whatsapp,
-  .cta__actions > .btn--gold {
-    grid-column: auto;
+  .cta__actions > .btn--gold,
+  .cta__actions > .share {
+    grid-column: 1 / -1;
   }
 
   .cta__actions > .btn--gold,
   .share__summary {
     min-height: 48px;
     font-size: 0.82rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
   }
 
   .share__panel {
@@ -1213,6 +1235,14 @@ img {
   }
 
   .contact-lower {
+    grid-template-columns: 1fr;
+  }
+
+  .cta__actions > .btn--contact {
+    grid-column: 1 / -1;
+  }
+
+  .cta__socials {
     grid-template-columns: 1fr;
   }
 
@@ -1271,30 +1301,26 @@ img {
     font-size: 0.78rem;
   }
 
-  .channel {
-    gap: 8px;
-    padding: 7px 10px;
-  }
-
-  .channel__icon {
-    width: 30px;
-    height: 30px;
-  }
-
-  .channel__value {
-    font-size: 0.77rem;
-  }
-
-  .channel__arrow {
-    display: none;
-  }
-
   .cta__socials {
     grid-template-columns: 1fr;
   }
 
   .social-tile {
     padding: 7px 9px;
+  }
+
+  .project-card {
+    gap: 10px;
+    padding: 11px 12px;
+  }
+
+  .project-card__icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .project-card__desc {
+    font-size: 0.76rem;
   }
 
   .btn--whatsapp {
@@ -1309,12 +1335,6 @@ img {
 
   .qr-card__copy h3 {
     font-size: 0.94rem;
-  }
-}
-
-@media (max-width: 335px) {
-  .channel__value {
-    font-size: 0.72rem;
   }
 }
 
